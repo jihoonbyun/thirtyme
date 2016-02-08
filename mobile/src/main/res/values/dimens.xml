@@ -1,0 +1,163 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--  Global dimens -->
+    <dimen name="statusBar_height">24dp</dimen>
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="statusBar_and_toolbar_height">80dp</dimen>
+    <dimen name="basic_rectangle_corner_radius">4dp</dimen>
+    <dimen name="screen_bottom_button_layout_height">48dp</dimen>
+    <dimen name="dialog_primary_margin_or_padding">12dp</dimen>
+    <dimen name="dialog_secondary_margin_or_padding">12dp</dimen>
+
+    <dimen name="dialog_loading_width">160dp</dimen>
+    <dimen name="dialog_loading_height">160dp</dimen>
+
+    <dimen name="text_size_24sp">24sp</dimen>
+    <dimen name="text_size_22sp">22sp</dimen>
+    <dimen name="text_size_20sp">20sp</dimen>
+    <dimen name="text_size_18sp">18sp</dimen>
+    <dimen name="text_size_16sp">16sp</dimen>
+    <dimen name="text_size_15sp">15sp</dimen>
+    <dimen name="text_size_14sp">14sp</dimen>
+    <dimen name="text_size_13sp">13sp</dimen>
+    <dimen name="text_size_12sp">12sp</dimen>
+
+    <dimen name="width_48dp">48dp</dimen>
+
+    <dimen name="height_1dp">1dp</dimen>
+    <dimen name="height_28dp">28dp</dimen>
+    <dimen name="height_36dp">36dp</dimen>
+    <dimen name="height_48dp">48dp</dimen>
+    <dimen name="height_584dp">584dp</dimen>
+
+    <dimen name="horizontal_margin_4dp">4dp</dimen>
+    <dimen name="horizontal_margin_8dp">8dp</dimen>
+    <dimen name="horizontal_margin_12dp">12dp</dimen>
+    <dimen name="horizontal_margin_16dp">16dp</dimen>
+    <dimen name="horizontal_margin_18dp">18dp</dimen>
+    <dimen name="horizontal_margin_48dp">48dp</dimen>
+    <dimen name="horizontal_margin_112dp">112dp</dimen>
+
+    <dimen name="vertical_margin_4dp">4dp</dimen>
+    <dimen name="vertical_margin_8dp">8dp</dimen>
+    <dimen name="vertical_margin_12dp">12dp</dimen>
+    <dimen name="vertical_margin_16dp">16dp</dimen>
+    <dimen name="vertical_margin_18dp">18dp</dimen>
+    <dimen name="vertical_margin_24dp">24dp</dimen>
+    <dimen name="vertical_margin_32dp">32dp</dimen>
+    <dimen name="vertical_margin_40dp">40dp</dimen>
+    <dimen name="vertical_margin_48dp">48dp</dimen>
+    <dimen name="vertical_margin_56dp">56dp</dimen>
+
+    <dimen name="horizontal_padding_4dp">4dp</dimen>
+    <dimen name="horizontal_padding_8dp">8dp</dimen>
+    <dimen name="horizontal_padding_12dp">12dp</dimen>
+    <dimen name="horizontal_padding_16dp">16dp</dimen>
+    <dimen name="horizontal_padding_18dp">18dp</dimen>
+
+    <dimen name="vertical_padding_4dp">4dp</dimen>
+    <dimen name="vertical_padding_6dp">6dp</dimen>
+    <dimen name="vertical_padding_8dp">8dp</dimen>
+    <dimen name="vertical_padding_16dp">16dp</dimen>
+    <dimen name="vertical_padding_24dp">24dp</dimen>
+
+    <!-- SignUpFragments -->
+    <dimen name="horizontal_margin_page_login">18dp</dimen>
+    <dimen name="vertical_margin_page_login">8dp</dimen>
+    <dimen name="horizontal_padding_page_login">12dp</dimen>
+    <dimen name="editText_height_page_login">48dp</dimen>
+    <dimen name="go_next_button_width_page_login">64dp</dimen>
+    <dimen name="screen_bottom_controller_layout_height">96dp</dimen>
+
+    <!-- RecommendationQueryPageFragment -->
+    <dimen name="horizontal_padding_primary_page_search_main">18dp</dimen>
+    <dimen name="horizontal_padding_secondary_page_search_main">12dp</dimen>
+    <dimen name="input_title_text_width_page_search_main">72dp</dimen>
+    <dimen name="input_button_width_page_search_main">100dp</dimen>
+
+    <!-- RecommendationPage -->
+    <dimen name="horizontal_padding_primary_page_room">12dp</dimen>
+    <dimen name="room_card_height_page_room">233dp</dimen>
+    <dimen name="room_card_viewpager_height_page_one_stop_recommendation">250dp</dimen>
+
+    <dimen name="recommended_mt_package_viewpager_page_margin_page_recommendation">8dp</dimen>
+
+    <dimen name="room_card_viewpager_fading_edge_length_page_one_stop_recommendation">24dp</dimen>
+    <dimen name="filter_sort_row_height_page_room">48dp</dimen>
+    <dimen name="subheader_food_height_page_one_stop_recommendation">48dp</dimen>
+    <dimen name="subheader_room_height_page_one_stop_recommendation">92dp</dimen>
+    <dimen name="room_card_horizontal_margin_page_room">12dp</dimen>
+    <dimen name="room_card_horizontal_margin_page_room_pre_lollipop">10dp</dimen>
+    <dimen name="room_card_vertical_margin_page_room">4dp</dimen>
+
+    <!-- AllRoomListPage -->
+    <dimen name="room_card2_horizontal_margin_page_room">8dp</dimen>
+    <dimen name="region_card_horizontal_margin_page_room">8dp</dimen>
+    <dimen name="region_card_vertical_margin_page_room">4dp</dimen>
+    <dimen name="pension_card_horizontal_margin_page_room">8dp</dimen>
+    <dimen name="pension_card_vertical_margin_page_room">4dp</dimen>
+
+    <!-- SavedRecommendationPage-->
+    <dimen name="saved_recommendation_card_horizontal_margin_page_saved_recommendation_list">8dp</dimen>
+    <dimen name="saved_recommendation_card_vertical_margin_page_saved_recommendation_list">4dp</dimen>
+
+    <!-- SpecificRoomInfoActivity -->
+    <dimen name="appBarLayout_height">288dp</dimen>
+    <dimen name="appBarLayout_height_with_statusBar_height">288dp</dimen>
+    <dimen name="recommendation_appBarLayout_height">268dp</dimen>
+    <dimen name="room_image_height">240dp</dimen>
+    <dimen name="tab_menu_height">48dp</dimen>
+    <dimen name="first_horizontal_padding_page_specific_room_info">12dp</dimen>
+    <dimen name="second_horizontal_padding_page_specific_room_info">18dp</dimen>
+    <dimen name="second_vertical_padding_page_specific_room_info">4dp</dimen>
+    <dimen name="basic_info_cardview_height_basic_info_tab">236dp</dimen>
+    <dimen name="horizontal_margin_page_specific_room_info">8dp</dimen>
+    <dimen name="special_horizontal_padding_page_specific_room_info">4dp</dimen>
+    <dimen name="tag_height_page_specific_room_info">32dp</dimen>
+    <dimen name="reservation_notice_content_cell_width">160dp</dimen>
+
+    <!-- FoodPageFragment -->
+    <dimen name="first_horizontal_padding_page_food">18dp</dimen>
+    <dimen name="second_horizontal_padding_page_food">24dp</dimen>
+    <dimen name="item_subtitle_height_page_eat_set">40dp</dimen>
+    <dimen name="item_subtitle_margin_top_page_eat_set">18dp</dimen>
+    <dimen name="item_subtitle_margin_bottom_page_eat_set">8dp</dimen>
+    <dimen name="item_row_height_page_eat_set">44dp</dimen>
+    <dimen name="item_row_margin_bottom_page_eat_set">4dp</dimen>
+    <dimen name="item_footer_row_height_page_eat_set">48dp</dimen>
+    <dimen name="item_footer_margin_top_page_eat_set">18dp</dimen>
+
+    <!--  CartPageFragment -->
+    <dimen name="item_title_height_page_cart">32dp</dimen>
+    <dimen name="item_title_vertical_margin_page_cart">8dp</dimen>
+    <dimen name="item_title_borderline_vertical_margin_page_cart">4dp</dimen>
+    <dimen name="horizontal_padding_page_cart">8dp</dimen>
+    <dimen name="vertical_padding_page_cart">16dp</dimen>
+    <dimen name="horizontal_vertical_margin_page_cart">8dp</dimen>
+
+    <dimen name="editText_height_page_cart">48dp</dimen>
+
+    <!-- RoomPageFragment, PackagePageFragment, CartPageFragment dimens-->
+    <dimen name="header_layout_height">184dp</dimen>
+    <dimen name="header_layout_height_without_bottom_bar">140dp</dimen>
+    <dimen name="process_layout_height">72dp</dimen>
+    <dimen name="instruction_statement_height">36dp</dimen>
+    <dimen name="mt_query_statement_height">32dp</dimen>
+    <dimen name="header_bottom_bar_height">44dp</dimen>
+    <dimen name="dialogfragment_horizontal_padding">12dp</dimen>
+
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html -->
+    <dimen name="navigation_drawer_width">256dp</dimen>
+
+
+    <dimen name="fb_margin_override_top">13dp</dimen>
+    <dimen name="fb_margin_override_bottom">13dp</dimen>
+    <!--The next value changes the margin between the FB icon and the left border:-->
+    <dimen name="fb_margin_override_lr">10dp</dimen>
+    <!--The next value changes the margin between the FB icon and the login text:-->
+    <dimen name="fb_margin_override_textpadding">17dp</dimen>
+</resources>

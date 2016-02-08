@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Global colors -->
+    <color name="mtplease_color_primary">#58C6FF</color>
+    <color name="mtplease_color_primary_dark">#4FB3E6</color>
+    <color name="mtplease_color_primary_light">#ABD9F9</color>
+    <color name="mtplease_color_primary_opacity_90">#E658C6FF</color>
+    <color name="mtplease_color_secondary">#ABD9F9</color>
+    <color name="mtplease_color_secondary_opacity_90">#E6ABD9F9</color>
+    <color name="mtplease_color_ternary">#637280</color>
+    <color name="mtplease_color_guide_background">#48a6cc</color>
+
+    <color name="mtplease_color_accent">#FFA342</color>
+    <color name="mtplease_color_accent_2">#FF717E</color>
+
+    <color name="navigation_drawer_item_selected">#BFDCDCDC</color>
+
+    <color name="mtplease_color_package">#FFDFB0</color>
+
+    <color name="text_color_discount_price">#CF2730</color>
+
+    <color name="hover_color_main">#4FB3E6</color>
+    <color name="color_point">#F8EF22</color>
+    <color name="hover_color_point">#F8EF22</color>
+    <color name="background_color_basic">#F0F0F0</color>
+    <color name="area_color_basic">#FFFFFF</color>
+    <color name="area_color_designated">#F4F4F4</color>
+    <color name="area_color_special">#E6000000</color>
+    <color name="text_color_inactivated">#ABD9F9</color>
+    <color name="hover_color_basic">#E9F7FE</color>
+    <color name="text_color_primary">#000000</color>
+    <color name="text_color_secondary">#666666</color>
+    <color name="text_color_ternary">#FFFFFF</color>
+    <color name="toolbar_specific_room_info_page">#66000000</color>
+    <color name="shadow_color">#DCDCDC</color>
+    <color name="area_color_region">#50000000</color>
+    <color name="background_color_user_guide_popup">#50000000</color>
+    <color name="background_color_user_sign_up">#80000000</color>
+    <color name="background_color_tint_photo">#90000000</color>
+    <color name="background_color_tint_photo_2">#B0637280</color>
+
+    <!-- NavigationDrawerFragment colors  -->
+    <color name="navigation_drawer_text_inactivated_color">#000000</color>
+    <color name="navigation_drawer_text_activated_color">#FFFFFF</color>
+    <color name="navigation_drawer_title_background_activated_color">#000000</color>
+
+    <!-- RecommendationQueryPageFragment colors -->
+    <color name="search_text_color_primary">#000000</color>
+    <color name="search_text_color_secondary">#ffffff</color>
+
+    <!-- RoomPageFragment & RoomCard colors -->
+    <color name="room_text_color_primary">#000000</color>
+    <color name="room_text_color_secondary">#ffffff</color>
+    <color name="room_button_color_primary">#000000</color>
+    <color name="room_card_background_color">#ffffff</color>
+    <color name="room_card_stamp_put_in_the_cart_background_color">#BF000000</color>
+
+    <!-- FoodPageFragment colors -->
+    <color name="food_text_color_primary">#000000</color>
+    <color name="food_text_color_secondary">#ffffff</color>
+    <color name="food_button_color_primary">#000000</color>
+    <color name="food_stamp_put_in_the_cart_background_color">#BF000000</color>
+
+    <!-- CartPageFragment colors -->
+    <color name="cart_text_color_primary">#000000</color>
+    <color name="cart_text_color_secondary">#ffffff</color>
+    <color name="cart_button_color_primary">#000000</color>
+    <color name="cart_button_color_secondary">#ffffff</color>
+
+
+</resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mtplease_color_primary"
+    tools:context="com.owo.mtplease.android.Login.LoginActivity">
+
+    <ImageView
+        android:scaleType="fitCenter"
+        android:src="@drawable/main_logo"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView_com_name_page_sign_up"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/image_com_name"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"/>
+
+    <com.owo.mtplease.android.Login.LoginActivityViewPager
+        android:id="@+id/viewPager_page_sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:id="@+id/button_test_login_page_sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_centerHorizontal="true"
+        android:text="NOTIFICATION TEST"
+        android:layout_marginTop="24dp"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/screen_bottom_controller_layout_height"
+        android:layout_alignParentBottom="true"
+        android:paddingLeft="@dimen/horizontal_margin_page_login"
+        android:paddingRight="@dimen/horizontal_margin_page_login">
+
+        <Button
+            android:id="@+id/button_confirm_access_terms_page_login"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/confirm"
+            android:textColor="@color/text_color_primary"
+            android:textSize="@dimen/text_size_18sp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroup_page_indicator_page_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton_page_1_page_sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:button="@drawable/selector_radiobutton_current_page"
+                android:clickable="false"/>
+
+            <RadioButton
+                android:id="@+id/radioButton_page_2_page_sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:button="@drawable/selector_radiobutton_current_page"
+                android:clickable="false"/>
+
+            <RadioButton
+                android:id="@+id/radioButton_page_3_page_sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/selector_radiobutton_current_page"
+                android:clickable="false"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView_to_next_page_sign_up"
+            android:layout_width="96dp"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/to_next"
+            android:textColor="@color/text_color_ternary"
+            android:textSize="@dimen/text_size_18sp"/>
+
+        <TextView
+            android:id="@+id/textView_to_previous_page_sign_up"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/to_previous"
+            android:textColor="@color/text_color_ternary"
+            android:textSize="@dimen/text_size_18sp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
