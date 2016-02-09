@@ -1,119 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/mtplease_color_primary"
-    tools:context="com.owo.mtplease.android.Login.LoginActivity">
-
+    android:background="@null">
     <ImageView
         android:scaleType="fitCenter"
         android:src="@drawable/main_logo"
         android:layout_width="280dp"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="160dp"/>
+        android:layout_marginTop="62dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView_com_name_page_sign_up"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/image_com_name"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="24dp"/>
-
-    <com.owo.mtplease.android.Login.LoginActivityViewPager
-        android:id="@+id/viewPager_page_sign_up"
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/button_fb_login"
+        android:text="@string/com_facebook_loginview_log_in_button_long"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="66dp"
+        android:layout_marginTop="88dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView" />
 
     <Button
-        android:id="@+id/button_test_login_page_sign_up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="false"
-        android:layout_centerHorizontal="true"
-        android:text="NOTIFICATION TEST"
-        android:layout_marginTop="24dp"
-        android:visibility="gone"/>
+        android:text="이메일로 초간단 가입"
+        android:id="@+id/signup_email"
+        android:layout_below="@+id/button_fb_login"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignLeft="@+id/button_fb_login"
+        android:layout_alignStart="@+id/button_fb_login" />
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/screen_bottom_controller_layout_height"
-        android:layout_alignParentBottom="true"
-        android:paddingLeft="@dimen/horizontal_margin_page_login"
-        android:paddingRight="@dimen/horizontal_margin_page_login">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="기존 계정으로 로그인"
+        android:id="@+id/login_email"
+        android:layout_below="@+id/signup_email"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_alignLeft="@+id/signup_email"
+        android:layout_alignStart="@+id/signup_email" />
 
-        <Button
-            android:id="@+id/button_confirm_access_terms_page_login"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:text="@string/confirm"
-            android:textColor="@color/text_color_primary"
-            android:textSize="@dimen/text_size_18sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="누구나 따라할 수 있는 패션"
+        android:id="@+id/textView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
-        <RadioGroup
-            android:id="@+id/radioGroup_page_indicator_page_sign_up"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="한번 경험해보시겠어요?"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
 
-            <RadioButton
-                android:id="@+id/radioButton_page_1_page_sign_up"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="8dp"
-                android:button="@drawable/selector_radiobutton_current_page"
-                android:clickable="false"/>
-
-            <RadioButton
-                android:id="@+id/radioButton_page_2_page_sign_up"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="8dp"
-                android:button="@drawable/selector_radiobutton_current_page"
-                android:clickable="false"/>
-
-            <RadioButton
-                android:id="@+id/radioButton_page_3_page_sign_up"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:button="@drawable/selector_radiobutton_current_page"
-                android:clickable="false"/>
-        </RadioGroup>
-
-        <TextView
-            android:id="@+id/textView_to_next_page_sign_up"
-            android:layout_width="96dp"
-            android:layout_height="48dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:clickable="true"
-            android:gravity="center"
-            android:text="@string/to_next"
-            android:textColor="@color/text_color_ternary"
-            android:textSize="@dimen/text_size_18sp"/>
-
-        <TextView
-            android:id="@+id/textView_to_previous_page_sign_up"
-            android:layout_width="wrap_content"
-            android:layout_height="48dp"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:clickable="true"
-            android:gravity="center"
-            android:text="@string/to_previous"
-            android:textColor="@color/text_color_ternary"
-            android:textSize="@dimen/text_size_18sp"/>
-
-    </RelativeLayout>
 
 </RelativeLayout>
