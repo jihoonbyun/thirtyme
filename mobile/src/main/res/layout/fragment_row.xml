@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/feed_bg"
+    android:orientation="horizontal"
+    android:id="@+id/rvLayout">
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardview"
+        card_view:cardCornerRadius="3dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:id="@+id/ContentInfo">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="@dimen/feed_item_padding_left_right"
+                android:paddingRight="@dimen/feed_item_padding_left_right"
+                android:gravity="right"
+                >
+
+                <TextView
+                    android:layout_width="102dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/username"
+                    android:textSize="@dimen/feed_item_profile_name"
+                    android:text="username"
+                    android:textColor="@color/color_blue"
+                    android:layout_gravity="left|center_horizontal"
+                    android:layout_weight="0.00" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.01"
+                    android:text="+Follow"
+                    android:textColor="#5e606f"
+                    android:id="@+id/follow"
+                    android:layout_gravity="center|right"
+                    android:gravity="right" />
+
+            </LinearLayout>
+
+
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/image"
+                android:adjustViewBounds="true"
+                android:nestedScrollingEnabled="false"
+                android:maxHeight="400dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="false"
+                android:src="@drawable/sample"
+                android:layout_below="@+id/llUserInfo"
+                android:scaleType="fitXY"
+                android:visibility="visible"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="@dimen/feed_item_padding_left_right"
+                android:paddingRight="@dimen/feed_item_padding_left_right"
+                android:weightSum="1">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#fantastic #cute #sexy #modern"
+                    android:id="@+id/hashtag"
+                    android:textColor="@color/color_silver"
+                    android:layout_below="@+id/likecnt"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:textSize="@dimen/activity_horizontal_margin"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    android:minHeight="50dp"
+                    android:linksClickable="false"
+                    android:gravity="left|center_horizontal" />
+
+                <!--
+                <com.like.LikeButton
+                    android:id="@+id/thumb_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:circle_end_color="@android:color/holo_blue_dark"
+                    app:circle_start_color="@android:color/holo_blue_bright"
+                    app:dots_primary_color="@android:color/holo_blue_light"
+                    app:dots_secondary_color="@android:color/holo_blue_dark"
+                    app:icon_size="10dp"
+                    app:like_drawable="@drawable/thumb_on"
+                    app:unlike_drawable="@drawable/thumb_off"
+                    android:layout_gravity="right" />
+                 -->
+                <!--
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textAppearance="?android:attr/textAppearanceMedium"
+                                    android:id="@+id/likecnt"
+                                    android:text="좋아요 23"
+                                    android:layout_below="@+id/image"
+                                    android:layout_gravity="right|center_horizontal"
+                                    android:gravity="right" />
+                    -->
+
+        <!--
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/followcnt"
+        android:text="팔로우 3"
+        android:layout_below="@+id/image"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/activity_horizontal_margin"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:minHeight="50dp"
+        android:linksClickable="false" />
+        -->
+
+
+                </LinearLayout>
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+

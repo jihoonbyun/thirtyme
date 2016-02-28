@@ -9,6 +9,7 @@ import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
 import android.app.Activity;
@@ -33,7 +34,6 @@ import org.json.JSONObject;
  */
 public class SignupEmailFragment extends DialogFragment {
 
-    public SignupEmailFragment(){};
 
     private Button signup_complete_btn;
     public EditText email;
@@ -41,31 +41,28 @@ public class SignupEmailFragment extends DialogFragment {
     private EditText passwordcheck;
     private EditText nickname;
 
-    public static SignupEmailFragment newInstance(){
+    public static SignupEmailFragment newInstance() {
         SignupEmailFragment fragment = new SignupEmailFragment();
         return fragment;
     }
 
     @Override
-    public void onCreate(Bundle savedInstanceState){
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
-        return inflater.inflate(R.layout.fragment_signupemail, container,false);
-    }
-    @Override
-    public void onViewCreated(LayoutInflater inflater, ViewGroup container,
-                              Bundle savedInstanceState){
-        View fragmentView = inflater.inflate(R.layout.fragment_signup_email, container, false);
-        super.onViewCreated(fragmentView, savedInstanceState);
-        signup_complete_btn = (Button) fragmentView.findViewById(R.layout.email_signup_complete);
-        email = (EditText) fragmentView.findViewById(R.layout.email_signup_email);
-        password = (EditText) fragmentView.findViewById(R.layout.email_signup_password);
-        passwordcheck = (EditText) fragmentView.findViewById(R.layout.email_signup_passwordcheck);
-        nickname = (EditText) fragmentView.findViewById(R.layout.email_signup_nickname);
+        getDialog().getWindow().requestFeature(Window.FEATURE_NO_TITLE);
+        View fragmentView = inflater.inflate(R.layout.fragment_signupemail, container, false);
+        signup_complete_btn = (Button) fragmentView.findViewById(R.id.email_signup_complete);
+        email = (EditText) fragmentView.findViewById(R.id.email_signup_email);
+        password = (EditText) fragmentView.findViewById(R.id.email_signup_password);
+        password.setHint("비밀번호(4글자 이상)");
+        passwordcheck = (EditText) fragmentView.findViewById(R.id.email_signup_passwordcheck);
+        passwordcheck.setHint("비밀번호 확인");
+        nickname = (EditText) fragmentView.findViewById(R.id.email_signup_nickname);
 
         signup_complete_btn.setOnClickListener(new View.OnClickListener() {
 
@@ -82,7 +79,7 @@ public class SignupEmailFragment extends DialogFragment {
                 } else {
                     Boolean isVaidMail = isEmail(EMAIL);
                     if (!isVaidMail) {
-                        Toast.makeText(this, "not valid email", 10).show();
+                        Toast.makeText(getContext(), "not valid email", Toast.LENGTH_SHORT).show();
                     } else {
                         if (TextUtils.isEmpty(PASSWORD)) {
                             email.setError("패스워드 입력해주세요");
@@ -93,11 +90,11 @@ public class SignupEmailFragment extends DialogFragment {
                                 return;
                             } else {
                                 if (PASSWORD.length() < 4) {
-                                    Toast.makeText(this, "password should be at least 4+ ", 10).show();
+                                    Toast.makeText(getContext(), "password should be at least 4+ ", Toast.LENGTH_SHORT).show();
                                     return;
                                 } else {
                                     if (!PASSWORD.equals(PASSWORDCHECK)) {
-                                        Toast.makeText(this, "password not same!", 10).show();
+                                        Toast.makeText(getContext(), "password not same!", Toast.LENGTH_SHORT).show();
                                         return;
                                     } else {
                                         if (TextUtils.isEmpty(NICKNAME)) {
@@ -107,8 +104,6 @@ public class SignupEmailFragment extends DialogFragment {
 
                                             //SUCCESS!!!
                                             //GO SERVER!
-
-
                                         }
                                     }
                                 }
@@ -121,51 +116,41 @@ public class SignupEmailFragment extends DialogFragment {
             }
 
         });
+
+        return inflater.inflate(R.layout.fragment_signupemail, container, false);
     }
 
+
     public static boolean isEmail(String email) {
-        if (email==null) return false;
-        boolean b = Pattern.matches("[\\w\\~\\-\\.]+@[\\w\\~\\-]+(\\.[\\w\\~\\-]+)+",email.trim());
+        if (email == null) return false;
+        boolean b = Pattern.matches("[\\w\\~\\-\\.]+@[\\w\\~\\-]+(\\.[\\w\\~\\-]+)+", email.trim());
         return b;
     }
 
-    public static void signupEmail(String requsetUrl, String requestBody){
+    public static void signupEmail(String requsetUrl, String requestBody) {
         //param1
         Response.Listener responseListen = new Response.Listener<JSONObject>() {
-                @Override
-                public void onResponse(JSONObject response) {
-                    try {
-
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
-                }
-            };
-            //param2
-            Response.ErrorListener responseFailed = new Response.ErrorListener() {
-                @Override
-                public void onErrorResponse(VolleyError error) {
-                    error.printStackTrace();
-                }
-            };
-            //request
-            JsonObjectRequest email_signup_request= new JsonObjectRequest(Request.Method.POST, requsetUrl, null, responseListen, responseFailed);
-            {
-
-                @Override
-                protected Map<String, String> getParams()
-                {
-                    Map<String, String> params = new HashMap<>();
-                    // the POST parameters:
-                    params.put("site", "code");
-                    params.put("network", "tutsplus");
-                    return params;
-                }
+            @Override
+            public void onResponse(JSONObject response) {
 
             }
+        };
+        //param2
+        Response.ErrorListener responseFailed = new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                error.printStackTrace();
+            }
+        };
+        //request
+        JsonObjectRequest email_signup_request = new JsonObjectRequest(Request.Method.POST, requsetUrl, null, responseListen, responseFailed);
+        {
 
-            //queing
-            Volley.newRequestQueue(this).add(email_signup_request);
+
+        }
+
+        //queing
+        //Volley.newRequestQueue(this).add(email_signup_request);
     }
 
 }

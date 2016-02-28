@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@null">
+    android:background="@drawable/background_login"
+    android:theme="@android:style/Theme.NoTitleBar">
     <ImageView
         android:scaleType="fitCenter"
         android:src="@drawable/main_logo"
@@ -54,7 +56,8 @@
         android:text="누구나 따라할 수 있는 패션"
         android:id="@+id/textView"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textColor="#828282" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -63,7 +66,9 @@
         android:text="한번 경험해보시겠어요?"
         android:id="@+id/textView2"
         android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textIsSelectable="true"
+        android:textColor="#828282" />
 
 
 </RelativeLayout>

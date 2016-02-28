@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="1.8" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/.." />
+            <option value="$PROJECT_DIR$/../floatlabelededittext" />
+            <option value="$PROJECT_DIR$/../glass" />
+            <option value="$PROJECT_DIR$/../glide" />
+            <option value="$PROJECT_DIR$/../integration" />
+            <option value="$PROJECT_DIR$/../integration/gifencoder" />
+            <option value="$PROJECT_DIR$/../integration/okhttp" />
+            <option value="$PROJECT_DIR$/../integration/okhttp3" />
+            <option value="$PROJECT_DIR$/../integration/recyclerview" />
+            <option value="$PROJECT_DIR$/../integration/volley" />
+            <option value="$PROJECT_DIR$/../library" />
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/../samples" />
+            <option value="$PROJECT_DIR$/../samples/flickr" />
+            <option value="$PROJECT_DIR$/../samples/gallery" />
+            <option value="$PROJECT_DIR$/../samples/giphy" />
+            <option value="$PROJECT_DIR$/../samples/svg" />
+            <option value="$PROJECT_DIR$/../testutil" />
+            <option value="$PROJECT_DIR$/../third_party" />
+            <option value="$PROJECT_DIR$/../third_party/disklrucache" />
+            <option value="$PROJECT_DIR$/../third_party/gif_decoder" />
+            <option value="$PROJECT_DIR$/../volley" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

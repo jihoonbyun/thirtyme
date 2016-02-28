@@ -1,1 +1,1 @@
-include ':mobile', ':glass', ':volley'
+include ':mobile', ':glass', ':volley', ':floatlabelededittext', ':integration:recyclerview', ':samples:gallery', ':library', ':samples:giphy', ':integration:volley', ':integration', ':integration:okhttp3', ':integration:okhttp', ':third_party:disklrucache', ':testutil', ':glide', ':samples:flickr', ':likebutton'

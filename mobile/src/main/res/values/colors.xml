@@ -1,21 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Global colors -->
-    <color name="mtplease_color_primary">#58C6FF</color>
-    <color name="mtplease_color_primary_dark">#4FB3E6</color>
-    <color name="mtplease_color_primary_light">#ABD9F9</color>
-    <color name="mtplease_color_primary_opacity_90">#E658C6FF</color>
-    <color name="mtplease_color_secondary">#ABD9F9</color>
-    <color name="mtplease_color_secondary_opacity_90">#E6ABD9F9</color>
-    <color name="mtplease_color_ternary">#637280</color>
-    <color name="mtplease_color_guide_background">#48a6cc</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
 
-    <color name="mtplease_color_accent">#FFA342</color>
-    <color name="mtplease_color_accent_2">#FF717E</color>
+    <color name="white">#ffffff</color>
+    <color name="feed_bg">#d3d6db</color>
+    <color name="feed_item_bg">#ffffff</color>
+    <color name="feed_item_border">#c2c3c8</color>
+    <color name="link">#0a80d1</color>
+    <color name="timestamp">#a0a3a7</color>
+
+    <color name="color_blue">#30303c</color>
+    <color name='color_silver'>#c3c4c9</color>
+
+    <!-- Global colors -->
+    <color name="color_primary">#58C6FF</color>
+    <color name="color_primary_dark">#4FB3E6</color>
+    <color name="color_primary_light">#ABD9F9</color>
+    <color name="color_primary_opacity_90">#E658C6FF</color>
+    <color name="color_secondary">#ABD9F9</color>
+    <color name="color_secondary_opacity_90">#E6ABD9F9</color>
+    <color name="color_ternary">#637280</color>
+    <color name="color_guide_background">#48a6cc</color>
+    <color name="colorControlNormal">#98d6e1</color>
+    <color name="colorControlActivated">#98d6e1</color>
+    <color name="colorControlHighlight">#98d6e1</color>
+
+    <color name="color_accent">#FFA342</color>
+    <color name="color_accent_2">#FF717E</color>
 
     <color name="navigation_drawer_item_selected">#BFDCDCDC</color>
 
-    <color name="mtplease_color_package">#FFDFB0</color>
+    <color name="color_package">#FFDFB0</color>
 
     <color name="text_color_discount_price">#CF2730</color>
 
