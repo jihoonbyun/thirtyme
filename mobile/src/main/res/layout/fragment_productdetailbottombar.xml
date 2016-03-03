@@ -3,12 +3,12 @@
     android:layout_height="match_parent" >
 
     <RelativeLayout
-        android:id="@+id/top_bar"
+        android:id="@+id/bottom_bar"
         android:layout_width="match_parent"
         android:layout_height="60dip"
-        android:layout_alignParentTop="true"
-        android:layout_gravity="top"
-        android:background="#47d1ff"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="#ffffff"
         android:padding="5dip" >
 
         <LinearLayout
@@ -19,26 +19,20 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="검색"
+                android:text="Like"
                 android:layout_weight="0.5"
                 android:layout_gravity="center"
-                android:paddingLeft="10dp"
-                android:id="@+id/searchbtn"
-                android:textColor="#ffffff"
-                android:textSize="20dp"
-                android:gravity="left|center_horizontal" />
+                android:id="@+id/homebtn"
+                android:gravity="center_horizontal" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="알림"
+                android:text="Product"
                 android:layout_weight="0.5"
                 android:layout_gravity="center"
-                android:paddingRight="10dp"
                 android:id="@+id/feedbtn"
-                android:textSize="20dp"
-                android:textColor="#ffffff"
-                android:gravity="center_horizontal|right" />
+                android:gravity="center_horizontal" />
 
         </LinearLayout>
 
@@ -47,7 +41,7 @@
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/top_bar"
+        android:layout_above="@id/bottom_bar"
         android:stretchColumns="1" >
 
 

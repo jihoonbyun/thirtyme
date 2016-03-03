@@ -24,10 +24,10 @@ final class SampleImagesAdapter extends BaseAdapter {
     public SampleImagesAdapter(Context context) {
         mInflater = LayoutInflater.from(context);
 
-        mItems.add(new Item("sample1","4,000", "http://i.imgur.com/DvpvklR.png"));
-        mItems.add(new Item("sample2","3,000","http://i.imgur.com/DvpvklR.png"));
-        mItems.add(new Item("sample3","2,000", "http://i.imgur.com/DvpvklR.png"));
-        mItems.add(new Item("sample4","1,000", "http://i.imgur.com/DvpvklR.png"));
+        mItems.add(new Item("상품1","4,000원", "https://images-na.ssl-images-amazon.com/images/G/01/rssmi/CX155LA_Home2._V354038362_.jpg"));
+        mItems.add(new Item("상품2","3,000원","https://images-na.ssl-images-amazon.com/images/G/01/rssmi/CX155LA_Home2._V354038362_.jpg"));
+        mItems.add(new Item("상품3","2,000원", "https://images-na.ssl-images-amazon.com/images/G/01/rssmi/CX155LA_Home2._V354038362_.jpg"));
+        mItems.add(new Item("상품4","1,000원", "https://images-na.ssl-images-amazon.com/images/G/01/rssmi/CX155LA_Home2._V354038362_.jpg"));
 
     }
 

@@ -12,7 +12,7 @@
         android:layout_marginBottom="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginLeft="10dp"
-        android:background="#ffffff" />
+        android:background="@drawable/roundshape_btn3" />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,7 +29,7 @@
             android:layout_weight=".5"
             android:text="인기순/최신순"
             android:paddingLeft="15dp"
-            android:background="#ffffff"
+            android:background="@drawable/roundshape_btn3"
             android:layout_marginRight="2.5dp"
             android:gravity="center_vertical" />/
         >
@@ -41,7 +41,7 @@
             android:layout_weight=".5"
             android:text="필터"
             android:paddingRight="15dp"
-            android:background="#ffffff"
+            android:background="@drawable/roundshape_btn3"
             android:layout_marginLeft="2.5dp"
             android:gravity="fill_vertical|right" />
 

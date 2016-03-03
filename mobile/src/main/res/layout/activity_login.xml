@@ -7,7 +7,7 @@
     android:theme="@android:style/Theme.NoTitleBar">
     <ImageView
         android:scaleType="fitCenter"
-        android:src="@drawable/main_logo"
+        android:src="@drawable/main_logo2"
         android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="62dp"
@@ -19,35 +19,43 @@
         android:id="@+id/button_fb_login"
         android:text="@string/com_facebook_loginview_log_in_button_long"
         android:layout_width="match_parent"
-        android:layout_height="66dp"
+        android:layout_height="40dp"
         android:layout_marginTop="88dp"
         android:layout_below="@+id/textView"
-        android:layout_alignRight="@+id/imageView"
-        android:layout_alignEnd="@+id/imageView"
-        android:layout_alignLeft="@+id/imageView"
-        android:layout_alignStart="@+id/imageView" />
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:text="이메일로 초간단 가입"
         android:id="@+id/signup_email"
         android:layout_below="@+id/button_fb_login"
-        android:layout_alignRight="@+id/imageView"
-        android:layout_alignEnd="@+id/imageView"
         android:layout_alignLeft="@+id/button_fb_login"
-        android:layout_alignStart="@+id/button_fb_login" />
+        android:layout_alignStart="@+id/button_fb_login"
+        android:background="@drawable/roundshape_btn"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"
+        android:layout_alignRight="@+id/button_fb_login"
+        android:layout_alignEnd="@+id/button_fb_login" />
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:text="기존 계정으로 로그인"
         android:id="@+id/login_email"
         android:layout_below="@+id/signup_email"
-        android:layout_alignRight="@+id/imageView"
-        android:layout_alignEnd="@+id/imageView"
         android:layout_alignLeft="@+id/signup_email"
-        android:layout_alignStart="@+id/signup_email" />
+        android:layout_alignStart="@+id/signup_email"
+        android:textColor="#78c5eb"
+        android:layout_marginTop="10dp"
+        android:allowUndo="true"
+        android:background="@drawable/roundshape_btn2"
+        android:layout_alignRight="@+id/signup_email"
+        android:layout_alignEnd="@+id/signup_email"
+        android:clickable="false" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -57,7 +65,7 @@
         android:id="@+id/textView"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:textColor="#828282" />
+        android:textColor="#fff" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -68,7 +76,7 @@
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
         android:textIsSelectable="true"
-        android:textColor="#828282" />
+        android:textColor="#fff" />
 
 
 </RelativeLayout>

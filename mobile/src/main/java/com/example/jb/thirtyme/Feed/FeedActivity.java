@@ -56,7 +56,6 @@ public class FeedActivity extends AppCompatActivity {
             }
         }));
 
-        Log.d("rrr", "after main");
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.addItemDecoration(new DividerItemDecoration(this));
         recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {

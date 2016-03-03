@@ -15,7 +15,7 @@ import com.example.jb.thirtyme.Main.MainActivity;
 /**
  * Created by jb on 2016-02-26.
  */
-public class MenuFragment extends Fragment {
+public class FooterMenuFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

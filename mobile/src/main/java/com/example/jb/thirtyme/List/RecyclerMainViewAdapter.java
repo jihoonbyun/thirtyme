@@ -97,12 +97,12 @@ public class RecyclerMainViewAdapter extends RecyclerView.Adapter<RecyclerView.V
         if(position == 0){
 
             RollingViewHolder rollingViewHolder = (RollingViewHolder) holder;
-            rollingViewHolder.setImages();
+            rollingViewHolder.setImages(holder.itemView);
 
         }
         else if(position == 1){
             FixedViewHolder fixedViewHolder = (FixedViewHolder) holder;
-            fixedViewHolder.setImages();
+            fixedViewHolder.setImages(holder.itemView);
         }
 
         else if(position == 2){
@@ -156,7 +156,6 @@ public class RecyclerMainViewAdapter extends RecyclerView.Adapter<RecyclerView.V
     public static class RollingViewHolder extends  RecyclerView.ViewHolder implements  View.OnClickListener{
 
         ImageView rolling1, rolling2, rolling3;
-        MainActivity mainActivity;
         private RecyclerViewOnItemClickListener recyclerViewOnItemClickListener;
 
        public RollingViewHolder(View itemView, RecyclerViewOnItemClickListener recyclerViewOnItemClickListener){
@@ -175,10 +174,10 @@ public class RecyclerMainViewAdapter extends RecyclerView.Adapter<RecyclerView.V
             recyclerViewOnItemClickListener.onClick(v, getAdapterPosition());
         }
 
-       public void setImages(){
-           Glide.with(mainActivity).load("http://i.imgur.com/DvpvklR.png").placeholder(R.drawable.image_photo_loading).error(R.drawable.image_photo_unavailable).centerCrop().crossFade().into(rolling1);
-           Glide.with(mainActivity).load("http://i.imgur.com/DvpvklR.png").placeholder(R.drawable.image_photo_loading).error(R.drawable.image_photo_unavailable).centerCrop().crossFade().into(rolling2);
-           Glide.with(mainActivity).load("http://i.imgur.com/DvpvklR.png").placeholder(R.drawable.image_photo_loading).error(R.drawable.image_photo_unavailable).centerCrop().crossFade().into(rolling3);
+       public void setImages(View v){
+           //Glide.with(v.getContext()).load("http://i.imgur.com/DvpvklR.png").placeholder(R.drawable.image_photo_loading).error(R.drawable.image_photo_unavailable).centerCrop().crossFade().into(rolling1);
+           //Glide.with(v.getContext()).load("http://i.imgur.com/DvpvklR.png").placeholder(R.drawable.image_photo_loading).error(R.drawable.image_photo_unavailable).centerCrop().crossFade().into(rolling2);
+           //Glide.with(v.getContext()).load("http://i.imgur.com/DvpvklR.png").placeholder(R.drawable.image_photo_loading).error(R.drawable.image_photo_unavailable).centerCrop().crossFade().into(rolling3);
        }
 
     }
@@ -186,7 +185,6 @@ public class RecyclerMainViewAdapter extends RecyclerView.Adapter<RecyclerView.V
     public static class FixedViewHolder extends RecyclerView.ViewHolder implements  View.OnClickListener{
 
         ImageView fixedbanner;
-        MainActivity mainActivity;
        private RecyclerViewOnItemClickListener recyclerViewOnItemClickListener;
         public  FixedViewHolder(View itemView, RecyclerViewOnItemClickListener recyclerViewOnItemClickListener){
             super(itemView);
@@ -201,19 +199,19 @@ public class RecyclerMainViewAdapter extends RecyclerView.Adapter<RecyclerView.V
             recyclerViewOnItemClickListener.onClick(v, getAdapterPosition());
         }
 
-        public void setImages(){
-            Glide.with(mainActivity).load("http://i.imgur.com/DvpvklR.png").placeholder(R.drawable.image_photo_loading).error(R.drawable.image_photo_unavailable).centerCrop().crossFade().into(fixedbanner);
+        public void setImages(View v){
+            //Glide.with(v.getContext()).load("http://i.imgur.com/DvpvklR.png").placeholder(R.drawable.image_photo_loading).error(R.drawable.image_photo_unavailable).centerCrop().crossFade().into(fixedbanner);
         }
     }
 
     public static class ThumbsViewHolder extends RecyclerView.ViewHolder implements  View.OnClickListener{
 
-        ImageView thumbs;
+        GridView thumbs;
         private RecyclerViewOnItemClickListener recyclerViewOnItemClickListener;
         public  ThumbsViewHolder(View itemView, RecyclerViewOnItemClickListener recyclerViewOnItemClickListener){
             super(itemView);
 
-            thumbs = (ImageView) itemView.findViewById(R.id.main_thumbs);
+            thumbs = (GridView) itemView.findViewById(R.id.main_thumbs);
             this.recyclerViewOnItemClickListener = recyclerViewOnItemClickListener;
             itemView.setOnClickListener(this);
         }
